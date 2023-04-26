@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <img src="images/chi-hung-wong-pmfSR43nDTc-unsplash.jpg" alt="CyberPunk Cityscape" role="img" aria-label="CyberPunk Cityscape"/>
+    <!-- Image Source: Chi Hung Wong from upsplash.com-->
+  </header>
+  <nav id="navigation">
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle"></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="content">
+    <h1>Contact Me</h1>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <form id="contactForm" action="index.html" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+          <p class="error" id="nameError">Please enter a name.</p>
+  
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required aria-required="true">
+          <p class="error" id="phoneError">Please enter a valid 10-digit phone number.</p>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+          <p class="error" id="emailError">Please enter a valid email address.</p>
+  
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" aria-label="Comments"></textarea>
+  
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+      <div class="contact-image">
+        <img src="images/vecteezy_customer-support-contact-us-man-with-headphones-and_19187912.jpg" alt="Person at computer." role="img" aria-label="Person at computer"/>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 Phillip Bridgeman. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

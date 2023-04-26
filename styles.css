@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #F5853F;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00120B;
+  padding: 20px 0;
+}
+
+#header img {
+  width: 70%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#navigation,
+#footer nav {
+  background: #7C3626;
+  padding: 15px;
+  text-align: center;
+}
+
+#navigation ul,
+#footer nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navigation li,
+#footer nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#navigation a,
+#footer nav a {
+  color: #F4F3EE;
+  text-decoration: none;
+}
+
+#navigation a:hover,
+#footer nav a:hover {
+  color: #F5853F;
+}
+
+#navigation a:visited,
+#footer nav a:visited {
+  color: #B3B3B3;
+}
+
+#navigation a:focus,
+#footer nav a:focus {
+  outline: 2px solid #F5853F;
+}
+
+#navigation li:first-child a {
+  transition: color 0.5s;
+}
+
+#navigation li:first-child a:hover {
+  color: #43AA8B;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#content h1 {
+  width: 100%;
+  text-align: center;
+  color: #7C3626;
+}
+
+#content h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  flex-basis: calc(50% - 40px);
+}
+
+.skill {
+  display: inline-block;
+  width: calc(50% - 20px);
+  vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.skill:nth-child(2n) {
+  margin-right: 0;
+}
+
+.skill ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  list-style-position: inside;
+}
+
+#content .skill h2 {
+  color: #43AA8B;
+}
+
+#content img {
+  flex: 2;
+  max-width: 60%;
+  height: auto;
+  margin-left: 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+#content p {
+  width: 70%;
+  color: #00120B;
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  background-color: #F5853F;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  display: block;
+  margin: 20px auto;
+}
+
+.project h3,
+.project p {
+  color: #000000 !important;
+}
+
+#footer {
+  background: #7C3626;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #7C3626;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #7C3626;
+  color: #F4F3EE;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.contact-form button:hover {
+  background-color: #43AA8B;
+}
+
+.error {
+  color: red;
+  display: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #F4F3EE;
+  color: #7C3626;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="tel"] {
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-form button {
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 -20px;
+}
+
+.contact-form {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-image {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-image {
+    max-width: 100%;
+  }
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  #navigation {
+    position: relative;
+  }
+
+  #navigation ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background: #7C3626;
+    width: 100%;
+  }
+
+  #navigation ul li {
+    display: block;
+    margin: 0;
+  }
+
+  #navigation input[type="checkbox"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  #navigation label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: #7C3626;
+    z-index: 1;
+  }
+
+  #navigation label::before,
+  #navigation label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #F4F3EE;
+  }
+
+  #navigation label::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  #navigation label::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  #navigation input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+
+  #navigation input[type="checkbox"]:checked ~ label::before {
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+
+  #navigation input[type="checkbox"]:checked ~ label::after {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form input[type="tel"] {
+  font-size: 1.6em;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form button {
+  font-size: 1.6em;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
